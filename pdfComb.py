@@ -23,7 +23,7 @@ def start(overwrite=False, combine=False) -> bool:
 
     pdfs = []
     for f in d.iterdir():
-        if f.is_file() and "output" not in f.name:
+        if f.is_file() and "output" not in f.name and f.name.lower().endswith(".pdf"):
             pdfs.append(f)
 
     pdf_objs = [pyDF.PdfFileReader(open(inp + "\\" + pdf.name, 'rb')) for pdf in pdfs]
