@@ -1,0 +1,10 @@
+
+# Venv
+/venv/
+
+# idea
+/.idea/
+
+# misc
+/__pycache__/
+Testdir.txt
